@@ -1,0 +1,45 @@
+.container1{
+    border:2px solid black;
+    width:75%;
+    margin:0 auto;
+    text-align: center;
+} 
+.flex-blackjack-row-1, .flex-blackjack-row-2,.flex-blackjack-row-3{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid black;
+   
+}
+.flex-blackjack-row-1{
+    background: url(images/blackjack.jpeg); 
+  background-size: cover;
+  padding: 10px 10px;
+  height:50%;
+  color: #ffffff;
+}
+.flex-blackjack-row-2{
+    background: url(images/blackjack.jpeg);
+    height:15%;
+}
+.flex-blackjack-row-1 div{
+    flex:1;
+    border: 1.5px solid black;
+}
+.flex-blackjack-row-2 button{
+    margin:25px 20px;
+}
+.flex-blackjack-row-3{
+    padding:10px;
+}
+table{
+ border: 1px solid black;
+}
+table th{
+    padding:10px;
+    border:1px solid black;
+}
+table td{
+    padding:10px;
+    border:1px solid black;
+}
