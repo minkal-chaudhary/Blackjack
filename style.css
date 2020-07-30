@@ -56,10 +56,12 @@ table td{
     border:1px solid black;
 }
 #your-box img{
-    width:19%;
-    padding:10px;
+    width:20.5%;
+    height:30%;
+    padding:2%;
 }
 #dealer-box img{
-    width:19%;
-    padding:10px;
+    width:20.5%;
+    height:30%;
+    padding:2%;
 }
