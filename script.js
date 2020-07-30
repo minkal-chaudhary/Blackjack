@@ -1,10 +1,11 @@
 let blackjackGame={
-    'you':{'scoreSpan':'your-blackjack-result','div':'#your-Box','score':0},
-    'dealer':{'scoreSpan':'dealer-blackjack-result','div':'#dealer-Box','score':0},
+    'you':{'scoreSpan':'your-blackjack-result','div':'#your-box','score':0},
+    'dealer':{'scoreSpan':'dealer-blackjack-result','div':'#dealer-box','score':0},
     'card':['2.png','3.png','4.png','5.png','6.png','7.png','8.png','9.png','10.png','A.png','J.png','K.png','Q.png'],
     'cardMap':{'2.png':2,'3.png':3,'4.png':4,'5.png':5,'6.png':6,'7.png':7,'8.png':8,'9.png':9,'10.png':10,'A.png':[1,11],'J.png':10,'K.png':10,'Q.png':10}
 
 }
+let dealboolean=false; 
 let imageArray=blackjackGame['card'];
 let you=blackjackGame['you']['div'];
 let youScore=blackjackGame['you'];
@@ -43,10 +44,12 @@ async function blackjackstand()
         document.querySelector('#dealer-blackjack-result').innerHTML=dealerScore['score'];
     }
     
-    console.log(dealerScore['score']);
     await sleep(1000);   
 }
    computeWinner();
+   console.log(dealboolean);
+   dealboolean=true;
+   console.log(dealboolean);
 }
 }
 function computeWinner(){
@@ -146,9 +149,9 @@ function addCard(div,randomimage,score){
 
 function blackjackDeal(){
  
-    if(dealerScore['score']>0)
+    if(dealerScore['score']>15&&(dealboolean==true))
     {
-
+     dealboolean=false;
     let yourimages=document.querySelector('#your-box').querySelectorAll('img');
     let dealerimages=document.querySelector('#dealer-box').querySelectorAll('img');
     for(let i=0;i<yourimages.length;i++)

@@ -5,6 +5,7 @@ body{
     background:url(images/containerbg1.jpeg);
     border:2px solid black;
     width:79%;
+    height: 100%;
     margin:0 auto;
     text-align: center;
 } 
@@ -27,7 +28,6 @@ body{
 }
 .flex-blackjack-row-2{
     background: url(images/blackjack.jpeg);
-    height:15%;
 }
 .flex-blackjack-row-1 div{
     flex:1;
