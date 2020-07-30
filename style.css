@@ -1,9 +1,16 @@
+body{
+    background:url(images/containerbg1.jpeg);
+}
 .container1{
+    background:url(images/containerbg1.jpeg);
     border:2px solid black;
-    width:75%;
+    width:79%;
     margin:0 auto;
     text-align: center;
 } 
+.container1 h3,h2{
+    color:whitesmoke
+}
 .flex-blackjack-row-1, .flex-blackjack-row-2,.flex-blackjack-row-3{
     display:flex;
     flex-wrap: wrap;
@@ -15,7 +22,7 @@
     background: url(images/blackjack.jpeg); 
   background-size: cover;
   padding: 10px 10px;
-  height:50%;
+  height:54%;
   color: #ffffff;
 }
 .flex-blackjack-row-2{
@@ -33,13 +40,26 @@
     padding:10px;
 }
 table{
+    background:url(images/containerbg.jpeg);
  border: 1px solid black;
 }
 table th{
+    color:white;
+    padding:10px;
+    border:2px solid black;
+    text-align: center;
+}
+table td{
+    text-align: center;
+    color:white;
     padding:10px;
     border:1px solid black;
 }
-table td{
+#your-box img{
+    width:19%;
     padding:10px;
-    border:1px solid black;
+}
+#dealer-box img{
+    width:19%;
+    padding:10px;
 }
